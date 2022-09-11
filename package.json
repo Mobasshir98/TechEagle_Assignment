@@ -1,0 +1,24 @@
+{
+  "name": "assignments",
+  "version": "1.0.0",
+  "description": "* Create a web application which accept data containing following fields in JSON format using TCP Socket and show \r them in interactive widgets as per your choice.\r ```js\r         data['mode']    = mode of flying (String)\r         data['roll']    = roll angle (degrees)\r         data['pitch']   = pitch angle (degrees)\r         data['yaw']     = yaw angle (degrees)\r         data['heading'] = current heading (degrees)\r         data['long']    = current longitude (degrees)\r         data['lat']     = current latitude (degrees)\r         data['alt']     = current altitude ASL (meters)",
+  "main": "Webclient.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TechEagle-Innovations/Assignments.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TechEagle-Innovations/Assignments/issues"
+  },
+  "homepage": "https://github.com/TechEagle-Innovations/Assignments#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mongoose": "^6.6.0"
+  }
+}
