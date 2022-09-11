@@ -14,7 +14,8 @@
  *============================================
  */
 
-var net = require("net");
+require('dotenv').config()
+ var net = require("net");
 var express = require("express");
 const mongoose = require("mongoose");
 const dronedata = require("./Model/drone");
@@ -25,7 +26,7 @@ app.use(cors())
 
 mongoose
   .connect(
-    "mongodb+srv://mobasshir:atlas1234@cluster0.tw3by.mongodb.net/dronedata?retryWrites=true&w=majority"
+    process.env.MONGODB_URI
   )
   .then(() =>
     app.listen(5000, () => {
